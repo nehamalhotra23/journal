@@ -1,16 +1,14 @@
-export function journal() {
-
-
-function Entry (title, entry) {
-  this.title = title,
+// export function journal() {
+export function Entry (entry) {
   this.entry = entry
 }
 
-var newEntry = new Entry ("title", "this is a test sentence.")
 
 
 Entry.prototype.wordCount = function(entry) {
-  var words = [];
-  console.log(this.entry.split(" ").length);
-  
-}
+  return this.entry.split(" ").length;
+
+
+
+  }
+// }
